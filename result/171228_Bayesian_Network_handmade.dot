@@ -1,0 +1,84 @@
+digraph test {
+	graph [bgcolor=transparent, fontcolor=black, ratio=fill, splines=TRUE, rank=same, size="7,7", rankdir=TB];
+	node [label="\N", shape=circle, fixedsize=TRUE, fillcolor=transparent, color=black, fontcolor=black, fontsize=14, height="0.5", width="0.75"];
+	edge [headport=center, color=black, dir=none, weight="1.0", fontcolor=black, arrowhead=none, arrowtail=none, fontsize=14, labelfontsize=11, arrowsize=1, style=solid, minlen=1];
+	graph [bb="0,0,774,774"];
+	absences [label=absences, height="0.75", pos="373.88,207"];
+	address [label=address, height="0.75", pos="29.881,747"];
+	age [label=age, height="0.75", pos="228.88,567"];
+	failures [label=failures, height="0.75", pos="433.88,387"];
+	famrel [label=famrel, height="0.75", pos="466.88,477"];
+	famsize [label=famsize, height="0.75", pos="744.88,477"];
+	famsup [label=famsup, height="0.75", pos="591.88,387"];
+	Fedu [label=Fedu, height="0.75", pos="545.88,477"];
+	freetime [label=freetime, height="0.75", pos="29.881,567"];
+	G1 [label=G1, height="0.75", pos="423.88,27"];
+	G2 [label=G2, height="0.75", pos="502.88,27"];
+	G3 [label=G3, height="0.75", pos="581.88,27"];
+	goout [label=goout, height="0.75", pos="170.88,477"];
+	health [label=health, height="0.75", pos="265.88,297"];
+	higher [label=higher, height="0.75", pos="512.88,387"];
+	internet [label=internet, height="0.75", pos="657.88,297"];
+	Medu [label=Medu, height="0.75", pos="623.88,477"];
+	nursery [label=nursery, height="0.75", pos="306.88,567"];
+	paid [label=paid, height="0.75", pos="669.88,387"];
+	Pstatus [label=Pstatus, height="0.75", pos="466.88,657"];
+	romantic [label=romantic, height="0.75", pos="149.88,567"];
+	schoolsup [label=schoolsup, height="0.75", pos="687.88,207"];
+	sex [label=sex, height="0.75", pos="228.88,657"];
+	studytime [label=studytime, height="0.75", pos="502.88,117"];
+	traveltime [label=traveltime, height="0.75", pos="29.881,657"];
+	Walc [label=Walc, height="0.75", pos="290.88,387"];
+	absences -> studytime:center [dir=forward, weight=1, arrowhead=open, pos="e,480.89,133 395.76,191.07 416.8,176.72 448.78,154.91 472.32,138.85"];
+	address -> traveltime:center [dir=forward, weight=1, arrowhead=open, pos="e,29.881,684.08 29.881,719.6 29.881,711.61 29.881,702.69 29.881,694.18"];
+	age -> failures:center [dir=forward, weight=1, arrowhead=open, pos="e,413.77,405.46 248.91,548.61 285.73,516.64 364.22,448.48 406.14,412.09"];
+	age -> goout:center [dir=forward, weight=1, arrowhead=open, pos="e,185.31,499.89 214.25,543.79 207.19,533.08 198.61,520.07 190.95,508.45"];
+	age -> Walc:center [dir=forward, weight=1, arrowhead=open, pos="e,282.23,412.83 237.5,541.25 248.25,510.38 266.69,457.44 278.84,422.58"];
+	age -> health:center [dir=forward, weight=1, arrowhead=open, pos="e,261.04,323.59 231.75,539.93 236.15,500.78 245.09,424.51 254.88,360 256.18,351.47 257.72,342.31 259.23,333.71"];
+	failures -> studytime:center [dir=forward, weight=1, arrowhead=open, pos="e,496.36,143.34 440.37,360.79 452.73,312.8 479.65,208.24 493.79,153.31"];
+	famrel -> famsup:center [dir=forward, weight=1, arrowhead=open, pos="e,569.94,403.45 488.65,460.67 508.87,446.44 539.17,425.11 561.71,409.24"];
+	famrel -> Walc:center [dir=forward, weight=1, arrowhead=open, pos="e,314.69,399.91 442.78,463.95 411.97,448.54 358.5,421.81 323.91,404.52"];
+	famrel -> absences:center [dir=forward, weight=1, arrowhead=open, pos="e,371.26,234.09 444.27,462.15 428.47,451.17 408.39,434.31 397.88,414 369.84,359.79 368.41,287.04 370.65,244.08"];
+	famsize -> famsup:center [dir=forward, weight=1, arrowhead=open, pos="e,614.44,402.22 721.59,463.06 691.58,446.38 642.25,418.93 633.88,414 630.41,411.95 626.79,409.78 623.2,407.6"];
+	famsize -> paid:center [dir=forward, weight=1, arrowhead=open, pos="e,687.09,408.19 727.86,456.03 717.77,444.19 704.82,429 693.72,415.97"];
+	famsup -> studytime:center [dir=forward, weight=1, arrowhead=open, pos="e,511.2,143.06 583.67,361.27 567.75,313.33 532.65,207.65 514.41,152.71"];
+	Fedu -> failures:center [dir=forward, weight=1, arrowhead=open, pos="e,454.95,404.56 525.08,459.65 507.59,445.91 482.39,426.11 462.91,410.81"];
+	Fedu -> higher:center [dir=forward, weight=1, arrowhead=open, pos="e,522.14,412.69 536.69,451.49 533.28,442.41 529.36,431.94 525.69,422.16"];
+	Fedu -> famsup:center [dir=forward, weight=1, arrowhead=open, pos="e,579.68,411.34 558.21,452.42 563.35,442.57 569.42,430.98 574.97,420.36"];
+	Fedu -> paid:center [dir=forward, weight=1, arrowhead=open, pos="e,648.11,403.45 567.48,460.67 587.54,446.44 617.59,425.11 639.95,409.24"];
+	freetime -> goout:center [dir=forward, weight=1, arrowhead=open, pos="e,148.28,492.1 52.535,551.86 76.175,537.11 113.4,513.87 139.79,497.41"];
+	freetime -> studytime:center [dir=forward, weight=1, arrowhead=open, pos="e,476.27,122.22 32.014,540.08 34.676,505.45 38.881,442.15 38.881,388 38.881,388 38.881,388 38.881,296 38.881,204.58 356.83,142.54\
+ 466.34,123.88"];
+	goout -> Walc:center [dir=forward, weight=1, arrowhead=open, pos="e,269.21,403.89 192.33,460.27 211.5,446.21 239.76,425.49 261.11,409.83"];
+	goout -> studytime:center [dir=forward, weight=1, arrowhead=open, pos="e,476.65,123.91 173.39,449.89 178.38,408.68 192.51,327.35 229.88,270 285.45,184.72 406.23,142.79 466.77,126.48"];
+	health -> absences:center [dir=forward, weight=1, arrowhead=open, pos="e,353.39,224.7 286.45,279.24 303.19,265.6 327,246.2 345.54,231.09"];
+	higher -> studytime:center [dir=forward, weight=1, arrowhead=open, pos="e,503.86,144.29 511.9,359.82 510.11,311.78 506.3,209.49 504.25,154.61"];
+	internet -> studytime:center [dir=forward, weight=1, arrowhead=open, pos="e,527.42,129 649.87,271.06 640.82,245.88 624.13,206.94 599.88,180 582.14,160.29 556.73,144.36 536.37,133.58"];
+	Medu -> failures:center [dir=forward, weight=1, arrowhead=open, pos="e,456.15,402.7 601.73,461.01 595.47,457.13 588.55,453.16 581.88,450 537.3,428.88 521.58,434.88 476.88,414 472.97,412.17 468.96,410.08\
+ 465.04,407.89"];
+	Medu -> higher:center [dir=forward, weight=1, arrowhead=open, pos="e,533.67,404.48 603,459.45 585.64,445.68 560.75,425.95 541.52,410.7"];
+	Medu -> famsup:center [dir=forward, weight=1, arrowhead=open, pos="e,600.86,412.69 614.97,451.49 611.67,442.41 607.86,431.94 604.3,422.16"];
+	Medu -> paid:center [dir=forward, weight=1, arrowhead=open, pos="e,657.68,411.34 636.21,452.42 641.35,442.57 647.42,430.98 652.97,420.36"];
+	paid -> internet:center [dir=forward, weight=1, arrowhead=open, pos="e,661.43,324.05 666.35,360.07 665.23,351.91 663.98,342.74 662.79,334.01"];
+	paid -> studytime:center [dir=forward, weight=1, arrowhead=open, pos="e,518.22,139.45 652.76,365.69 643.17,353.88 631.28,338.51 621.88,324 582.42,263.09 582.4,242.13 544.88,180 538.44,169.33 530.93,\
+157.95 524.05,147.89"];
+	Pstatus -> famsize:center [dir=forward, weight=1, arrowhead=open, pos="e,741.19,504 493.99,656.17 541.2,655 639.09,645.99 697.88,594 721.16,573.41 733.1,539.63 739.1,513.81"];
+	Pstatus -> famrel:center [dir=forward, weight=1, arrowhead=open, pos="e,466.88,504.08 466.88,629.74 466.88,599.15 466.88,548.45 466.88,514.16"];
+	Pstatus -> famsup:center [dir=forward, weight=1, arrowhead=open, pos="e,614.87,401.59 491.7,645.44 535.32,625.32 624.5,576.9 659.88,504 670.36,482.41 669.57,471.96 659.88,450 652.29,432.81 637.33,418.33\
+ 623.36,407.7"];
+	Pstatus -> freetime:center [dir=forward, weight=1, arrowhead=open, pos="e,55.382,576.81 440.07,652.47 380.78,644.41 234.24,623.07 113.88,594 97.725,590.1 80.118,584.81 65.216,580.02"];
+	Pstatus -> Walc:center [dir=forward, weight=1, arrowhead=open, pos="e,305.48,410.23 452.48,634.07 421.22,586.46 347.07,473.55 311.12,418.81"];
+	romantic -> goout:center [dir=forward, weight=1, arrowhead=open, pos="e,164.82,503.4 155.96,540.55 157.98,532.06 160.27,522.46 162.44,513.36"];
+	schoolsup -> studytime:center [dir=forward, weight=1, arrowhead=open, pos="e,527.57,128.17 664.71,192.34 657.48,188.23 649.42,183.8 641.88,180 606.74,162.28 565.44,144.19 537.04,132.16"];
+	sex -> nursery:center [dir=forward, weight=1, arrowhead=open, pos="e,289.25,587.89 246.58,636.03 257.15,624.11 270.73,608.78 282.33,595.7"];
+	sex -> romantic:center [dir=forward, weight=1, arrowhead=open, pos="e,167.46,587.59 210.96,636.03 200.07,623.91 186.04,608.27 174.16,595.05"];
+	sex -> higher:center [dir=forward, weight=1, arrowhead=open, pos="e,490.16,401.81 253.93,646.86 278.76,636.85 316.76,618.84 342.88,594 397.24,542.32 380.53,505.59 430.88,450 445.64,433.7 465.18,\
+418.74 481.49,407.59"];
+	sex -> health:center [dir=forward, weight=1, arrowhead=open, pos="e,245.61,315.46 202.64,650.18 175.04,642.5 133.01,626.04 113.88,594 101.58,573.39 111.14,563.84 113.88,540 118.58,499.2 116.27,486.62\
+ 134.88,450 160.97,398.69 207.95,350.29 237.99,322.42"];
+	studytime -> G1:center [dir=forward, weight=1, arrowhead=open, pos="e,441.46,47.586 484.96,96.031 474.07,83.908 460.04,68.273 448.16,55.049"];
+	studytime -> G2:center [dir=forward, weight=1, arrowhead=open, pos="e,502.88,54.081 502.88,89.597 502.88,81.607 502.88,72.689 502.88,64.176"];
+	studytime -> G3:center [dir=forward, weight=1, arrowhead=open, pos="e,564.3,47.586 520.81,96.031 531.69,83.908 545.73,68.273 557.6,55.049"];
+	traveltime -> freetime:center [dir=forward, weight=1, arrowhead=open, pos="e,29.881,594.08 29.881,629.6 29.881,621.61 29.881,612.69 29.881,604.18"];
+	Walc -> health:center [dir=forward, weight=1, arrowhead=open, pos="e,273.01,323.09 283.65,360.55 281.19,351.9 278.4,342.08 275.78,332.83"];
+}
